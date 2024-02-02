@@ -22,7 +22,7 @@ function FactionView(): JSX.Element {
         }, 10000);
     }, [])
     return (
-        <div>
+        <div className="cards">
             {data.map((faction) => {
                 return (
                     <FactionItem
