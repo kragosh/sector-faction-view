@@ -8,7 +8,7 @@ type Faction = {
 
 function FactionItem(faction: Faction): JSX.Element {
     return (
-        <div className="place-content-center">
+        <div className="flex justify-center">
             <div className="flex items-center bg-white shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
                 <div className="w-1/4">
                     <img src={faction.imageUrl} alt={faction.name}/>
