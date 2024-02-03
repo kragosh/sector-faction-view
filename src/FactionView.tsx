@@ -38,7 +38,7 @@ function FactionView(): JSX.Element {
     }, [])
     return (
         <div className="cards">
-            <div className="p-10 text-3xl text-center text-gray-300">Offen</div>
+            <div className="p-5 text-3xl text-center text-gray-300">Offen</div>
             {data.filter(faction => faction.available).map((faction) => {
                 return (<FactionItem
                     key={faction.number}
@@ -48,7 +48,7 @@ function FactionView(): JSX.Element {
                     image={faction.image}
                 />)
             })}
-            <div className="p-10 text-3xl text-center text-gray-300">Geschlossen</div>
+            <div className="p-5 text-3xl text-center text-gray-300">Geschlossen</div>
             {data.filter(faction => !faction.available).map((faction) => {
                 return (
                     <FactionItem
