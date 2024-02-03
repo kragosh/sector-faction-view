@@ -3,7 +3,7 @@ import {AdditonalFactionProps} from "./FactionItem";
 let data : AdditonalFactionProps[] =[
   {
     name: "Los Santos Police Department - Notruf",
-    number: 9119,
+    number: 911,
     additionalImage: "",
     text: "Der Notruf ist für Notfälle gedacht. Bitte benutze ihn nicht für Scherzanrufe oder ähnliches.",
     workingHours: "24/7",
