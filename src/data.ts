@@ -44,9 +44,9 @@ let data : AdditonalFactionProps[] =[
     name: "",
     number: 456123,
     additionalImage: "",
-    text: "Was sollen wir sagen. Ihr wollt was essen, viel glück. Fuck YOU!",
+    text: "Was sollen wir sagen. Fuck YOU!",
     workingHours: "Wenn wir verfickt nochmal bock haben!",
-    type: "Gastronomie",
+    type: "Handel",
   },
   {
     name: "Benny's Tuning",
