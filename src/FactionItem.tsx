@@ -64,11 +64,11 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                     </div>
                     <div className="w-10/12 pl-4 mr-5">
                         <div className="flex flex-row">
-                            <div className="w-11/12">
+                            <div className="w-10/12">
                                 <p className=" font-bold text-xl text-white">{addedProps.name || faction.name}</p>
                                 <p className="text-gray-300 mb-5">{addedProps.text}</p>
                             </div>
-                            <p className="w-1/12 text-right text-gray-300 text-3xl">{faction.number}</p>
+                            <p className="w-2/12 text-right text-gray-300 text-3xl">{faction.number}</p>
                         </div>
                         <div className="flex flex-row">
                             <div className="w-2/12">

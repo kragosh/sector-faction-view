@@ -1,6 +1,6 @@
 import FactionItem, {Faction, FactionCardProps} from "./FactionItem";
 import {useEffect, useState} from "react";
-
+import AdditionalData from "./data";
 async function getFactionInformation() {
     const response = await fetch('https://api.bitdevil2k16.net/demo/leitstellen');
     const data = await response.json();
@@ -35,9 +35,10 @@ function FactionView(): JSX.Element {
                 );
         }, 10000);
     }, [])
+
     return (
+        <>
         <div className="cards">
-            <div className="p-5 text-3xl text-center text-gray-300">Offen</div>
             {data.filter(faction => faction.available).map((faction) => {
                 return (<FactionItem
                     key={faction.number}
@@ -47,7 +48,6 @@ function FactionView(): JSX.Element {
                     image={faction.image}
                 />)
             })}
-            <div className="p-5 text-3xl text-center text-gray-300">Geschlossen</div>
             {data.filter(faction => !faction.available).map((faction) => {
                 return (
                     <FactionItem
@@ -59,6 +59,7 @@ function FactionView(): JSX.Element {
                     />)
             })}
         </div>
+        </>
     );
 }
 

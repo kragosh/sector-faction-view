@@ -12,7 +12,10 @@ function App() {
                         </div>
                     </div>
                     <div className="">
-                        <div className="text-6xl p-5 w-10/12 text-gray-200"><img src="images/lsledger.png"/></div>
+                        <div className="text-3xl p-5 w-10/12 text-gray-200">
+                            <img src="images/lsledger.png"/>
+                            <i>Serving good and evil since 2k24</i>
+                        </div>
                     </div>
                 </div>
                         <FactionView/>
