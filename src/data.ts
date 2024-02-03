@@ -47,7 +47,14 @@ let data : AdditonalFactionProps[] =[
     text: "Was sollen wir sagen. Ihr wollt was essen, viel glück. Fuck YOU!",
     workingHours: "Wenn wir verfickt nochmal bock haben!",
     type: "Gastronomie",
-  }
-]
+  },
+  {
+    name: "Benny's Tuning",
+    number: 456,
+    additionalImage: "",
+    text: "Erlebnisorientiertes Tuning und andere Aktivitäten",
+    workingHours: "immer",
+    type: "Tuning",
+  },]
 
 export default data;
