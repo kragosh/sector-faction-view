@@ -8,7 +8,6 @@ function App() {
                 <div className="flex flex-row">
                     <div className="w-2/12 content-center">
                         <div className="size-56">
-                            <img height="px" src="images/logo.webp"/>
                         </div>
                     </div>
                     <div className="">
