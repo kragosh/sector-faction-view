@@ -2,7 +2,7 @@ import FactionItem, {Faction} from "./FactionItem";
 import {useEffect, useState} from "react";
 
 async function getFactionInformation() {
-    const response = await fetch('data.json');
+    const response = await fetch('https://api.bitdevil2k16.net/demo/leitstellen');
     const data = await response.json();
     return data;
 }
@@ -27,10 +27,9 @@ function FactionView(): JSX.Element {
                 return (
                     <FactionItem
                         name={faction.name}
-                        telephone={faction.telephone}
-                        description={faction.description}
-                        imageUrl={faction.imageUrl}
-                        available={faction.available}
+                        numbers={faction.numbers}
+                        anyavailable={faction.anyavailable}
+                        image={faction.image}
                     />
                 );
             })}
