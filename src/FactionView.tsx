@@ -18,7 +18,6 @@ async function getFactionInformation() {
             });
         });
     });
-    console.log(factionCards);
     return factionCards;
 }
 
