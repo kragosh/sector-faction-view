@@ -9,13 +9,12 @@ type Faction = {
 function FactionItem(faction: Faction): JSX.Element {
     return (
         <div className="flex justify-center">
-            <div className="flex items-center bg-white shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
+            <div className="flex items-center bg-gray-500 shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
                 <div className="w-1/4">
                     <img src={faction.imageUrl} alt={faction.name}/>
                 </div>
                 <div className="w-3/4 pl-4">
                     <p className="font-bold text-lg">{faction.name}</p>
-                    <p className="text-gray-600">{faction.description}</p>
                     <p className="text-gray-600">Call us: {faction.telephone}</p>
                     { (faction.available)
                         ? <p className="text-green-500">Verfügbarkeit: Verfügbar</p>
