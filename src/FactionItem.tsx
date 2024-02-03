@@ -11,7 +11,7 @@ function FactionItem(faction: Faction): JSX.Element {
         <div className="flex justify-center">
             <div className="flex items-center bg-neutral-800 shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
                 <div className="w-1/4">
-                    <img src={faction.imageUrl} alt={faction.name}/>
+                    <img height="400px" src={faction.imageUrl} alt={faction.name}/>
                 </div>
                 <div className="w-3/4 pl-4">
                     <p className="font-bold text-lg text-white">{faction.name}</p>

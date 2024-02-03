@@ -1,17 +1,21 @@
 [
   {
-    "name": "The Empire",
-    "telephone": "123-456-7890",
-    "description": "The Empire is a faction in the Star Wars universe.",
-    "imageUrl": "https://picsum.photos/300/200?random=1",
+    "name": "Los Santos Police Department - Notruf",
+    "telephone": "911",
+    "imageUrl": "https://static.wikia.nocookie.net/alterlifepolicedepartement/images/5/51/R_%281%29.png/revision/latest?cb=20220111090530",
     "available": true
   },
   {
-    "name": "The Rebellion",
-    "telephone": "098-765-4321",
-    "description": "The Rebellion is a faction in the Star Wars universe.",
-    "imageUrl": "https://picsum.photos/300/200?random=2",
+    "name": "Los Santos Police Department - Buergerhotline",
+    "telephone": "119",
+    "imageUrl": "https://static.wikia.nocookie.net/alterlifepolicedepartement/images/5/51/R_%281%29.png/revision/latest?cb=20220111090530",
     "available": false
+  },
+  {
+    "name": "Stadtverwaltung",
+    "telephone": "5432",
+    "imageUrl": "images/stadtverwaltung.png",
+    "available": true
   },
   {
     "name": "The First Order",
