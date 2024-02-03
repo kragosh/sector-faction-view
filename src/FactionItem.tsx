@@ -12,32 +12,39 @@ type FactionNumbers = {
 
 }
 
+type FactionCardProps = {
+    key: number;
+    name: string;
+    number: number;
+    available: boolean;
+    image: string;
+
+}
+
 
 /**
  * @param faction
  * @constructor
  */
-function FactionItem(faction: Faction): JSX.Element {
+function FactionItem(faction: FactionCardProps): JSX.Element {
     return (
         <>
-            {faction.numbers.map((number) => {
-                return <div className="flex justify-center">
-                    <div
-                        className="flex items-center bg-neutral-800 shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
-                        <div className="w-1/4">
-                            <img width="200px" src={faction.image} alt={faction.name}/>
-                        </div>
-                        <div className="w-3/4 pl-4">
-                            <p className="font-bold text-lg text-white">{faction.name}</p>
-                            <p className="text-gray-300">Call us: {number.number}</p>
-                            {(number.available)
-                                ? <p className="text-green-500">Verfügbarkeit: Verfügbar</p>
-                                : <p className="text-red-500">Verfügbarkeit: Nicht verfügbar</p>
-                            }
-                        </div>
-                    </div>
+            <div className="flex justify-center">
+            <div
+                className="flex items-center bg-neutral-800 shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
+                <div className="w-1/4">
+                    <img width="200px" src={faction.image} alt={faction.name}/>
                 </div>
-            })}
+                <div className="w-3/4 pl-4">
+                    <p className="font-bold text-lg text-white">{faction.name}</p>
+                    <p className="text-gray-300">Call us: {faction.number}</p>
+                    {(faction.available)
+                        ? <p className="text-green-500">Verfügbarkeit: Verfügbar</p>
+                        : <p className="text-red-500">Verfügbarkeit: Nicht verfügbar</p>
+                    }
+                </div>
+            </div>
+        </div>
 
         </>
     )
@@ -45,7 +52,7 @@ function FactionItem(faction: Faction): JSX.Element {
 }
 
 export default FactionItem;
-export type {Faction};
+export type {Faction, FactionCardProps};
 
 /**
  * <div class="flex items-center bg-white shadow-lg rounded-lg overflow-hidden p-4">
