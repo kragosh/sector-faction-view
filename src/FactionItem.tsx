@@ -15,7 +15,7 @@ function FactionItem(faction: Faction): JSX.Element {
                 </div>
                 <div className="w-3/4 pl-4">
                     <p className="font-bold text-lg text-white">{faction.name}</p>
-                    <p className="text-text-white">Call us: {faction.telephone}</p>
+                    <p className="text-gray-300">Call us: {faction.telephone}</p>
                     { (faction.available)
                         ? <p className="text-green-500">Verfügbarkeit: Verfügbar</p>
                         : <p className="text-red-500">Verfügbarkeit: Nicht verfügbar</p>
