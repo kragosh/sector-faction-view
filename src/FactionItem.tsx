@@ -10,6 +10,7 @@ export type Faction = {
 export type FactionNumbers = {
     name: string;
     number: number;
+    description: string;
     available: boolean;
 
 }
@@ -18,6 +19,7 @@ export type FactionCardProps = {
     key: number;
     name: string;
     number: number;
+    text: string;
     available: boolean;
     image: string;
 
@@ -65,7 +67,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                     <div className="w-10/12 pl-4 mr-5">
                         <div className="flex flex-row">
                             <div className="w-10/12">
-                                <p className=" font-bold text-xl text-white">{addedProps.name || faction.name}</p>
+                                <p className="font-bold text-xl text-white">{addedProps.name || faction.name + " - " + (faction.text || "") }</p>
                                 <p className="text-gray-300 mb-5">{addedProps.text}</p>
                             </div>
                             <p className="w-2/12 text-right text-gray-300 text-3xl">{faction.number}</p>

@@ -13,6 +13,7 @@ async function getFactionInformation() {
                 key: number.number,
                 name: faction.name,
                 number: number.number,
+                text: number.description,
                 available: number.available,
                 image: faction.image
             });
@@ -43,6 +44,7 @@ function FactionView(): JSX.Element {
                 return (<FactionItem
                     key={faction.number}
                     name={faction.name}
+                    text={faction.text}
                     number={faction.number}
                     available={faction.available}
                     image={faction.image}
@@ -53,6 +55,7 @@ function FactionView(): JSX.Element {
                     <FactionItem
                         key={faction.number}
                         name={faction.name}
+                        text={faction.text}
                         number={faction.number}
                         available={faction.available}
                         image={faction.image}

@@ -2,7 +2,7 @@ import {AdditonalFactionProps} from "./FactionItem";
 
 let data : AdditonalFactionProps[] =[
   {
-    name: "Los Santos Police Department - Notruf",
+    name: "",
     number: 911,
     additionalImage: "",
     text: "Der Notruf ist für Notfälle gedacht. Bitte benutze ihn nicht für Scherzanrufe oder ähnliches.",
@@ -10,7 +10,7 @@ let data : AdditonalFactionProps[] =[
     type: "Behörde",
   },
   {
-    name: "Los Santos Police Department - Bürgerhotline",
+    name: "",
     number: 190,
     additionalImage: "",
     text: "Die Bürgerhotline ist für allgemeine Anfragen und Informationen gedacht.",
@@ -41,7 +41,7 @@ let data : AdditonalFactionProps[] =[
     type: "Werkstatt",
   },
   {
-    name: "Fuck you tool - Die Erlebnissgastronomie",
+    name: "",
     number: 456123,
     additionalImage: "",
     text: "Was sollen wir sagen. Ihr wollt was essen, viel glück. Fuck YOU!",
