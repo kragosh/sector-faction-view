@@ -11,7 +11,7 @@ async function getFactionInformation() {
         faction.numbers.map((number) => {
             factionCards.push({
                 key: number.number,
-                name: faction.name,
+                name: number.name,
                 number: number.number,
                 text: number.description,
                 available: number.available,
