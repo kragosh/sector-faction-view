@@ -31,7 +31,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
         <>
             <div className="flex justify-center">
             <div
-                className="flex items-center bg-neutral-800 shadow-lg rounded-lg overflow-hidden p-4 m-4 border w-9/12">
+                className="flex items-center bg-neutral-900 shadow-lg rounded-lg overflow-hidden p-4 m-4 w-9/12">
                 <div className="w-1/4">
                     <img width="150px" src={faction.image} alt={faction.name}/>
                 </div>
