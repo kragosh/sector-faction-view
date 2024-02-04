@@ -22,6 +22,7 @@ export type FactionCardProps = {
     text: string;
     available: boolean;
     image: string;
+    additional: AdditonalFactionProps;
 
 }
 
@@ -39,23 +40,6 @@ export type AdditonalFactionProps = {
  * @constructor
  */
 function FactionItem(faction: FactionCardProps): JSX.Element {
-
-    let filtered = data.filter(row => row.number === faction.number)
-    let addedProps: AdditonalFactionProps;
-    if (filtered.length === 0) {
-        addedProps = {
-            number: 0,
-            name: "",
-            additionalImage: "",
-            text: "",
-            workingHours: "",
-            type: "Sonstiges"
-
-        }
-    } else {
-        addedProps = filtered[0];
-    }
-
     return (
         <>
             <div className="flex justify-center">
@@ -74,7 +58,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                         </div>
                         <div className="flex flex-row">
                             <div className="w-2/12">
-                                <i className="text-gray-500">{addedProps.type}</i>
+                                <i className="text-gray-500">{faction.additional.type}</i>
                             </div>
                             <div className="w-8/12">
                                 <p className="text-gray-600 text-center"></p>
