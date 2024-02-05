@@ -16,10 +16,10 @@ function App() {
                             <p className="mt-3"><i>Serving good and evil since 2k24</i></p>
                         </div>
                     </div>
-                    <div className="fixed left-0 bottom-0 opacity-70">
+                    <div className="fixed left-0 -bottom-3 opacity-70">
                         <img width="450" src="images/palm1.png"/>
                     </div>
-                    <div className="fixed right-0 bottom-0 opacity-70">
+                    <div className="fixed right-0 -bottom-3 opacity-70">
                         <img width="450" src="images/palm2.png"/>
                     </div>
                 </div>
