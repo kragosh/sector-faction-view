@@ -24,6 +24,13 @@ function App() {
                     </div>
                 </div>
                 <FactionView/>
+                <div className="flex justify-center">
+                    <div className="w-9/12">
+                        <div className="p-10 text-right text-neutral-900">
+                            (c) 2024 LSLedger Inc.
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     );
