@@ -44,7 +44,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
         <>
             <div className="flex justify-center">
                 <div
-                    className="flex items-center bg-neutral-900 bg-opacity-80 drop-shadow-lg rounded-3xl overflow-hidden p-4 m-4 w-9/12 z-10">
+                    className="flex items-center backdrop-blur bg-neutral-900 bg-opacity-20 drop-shadow-lg rounded-3xl overflow-hidden p-4 m-4 w-9/12 z-10">
                     <div className="w-2/12">
                         <img width="150px" src={faction.image} alt={faction.name}/>
                     </div>
@@ -58,7 +58,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                         </div>
                         <div className="flex flex-row">
                             <div className="w-2/12">
-                                <i className="text-gray-500">{faction.additional.type}</i>
+                                <i className="text-gray-700">{faction.additional.type}</i>
                             </div>
                             <div className="w-8/12">
                                 <p className="text-gray-600 text-center"></p>
