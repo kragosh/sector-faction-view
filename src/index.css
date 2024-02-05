@@ -4,10 +4,15 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: #101010;
+    background: linear-gradient(to bottom, #FEB779 0%, #FC94C5 25%, #D07FC2 50%, #862E85 100%);
+    /*background-color: #101010;*/
     color: #1f2937;
 }
 
 h1 {
     color: #f3f4f6;
+}
+
+.element {
+    background: linear-gradient(to bottom, #FEB779 0%, #FC94C5 25%, #D07FC2 50%, #862E85 100%);
 }
