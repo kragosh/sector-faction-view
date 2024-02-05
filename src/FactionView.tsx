@@ -99,7 +99,7 @@ function FactionView(): JSX.Element {
         <>
             <div className="flex justify-center">
                 <div className="w-9/12">
-                    <div className="grid grid-cols-6">
+                    <div className="grid grid-cols-6 opacity-80">
                         {overview.map((faction) => {
                             let color: string = "text-gray-700";
                             if (faction.online > 0) {

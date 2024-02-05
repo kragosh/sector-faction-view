@@ -11,9 +11,9 @@ function App() {
                         </div>
                     </div>
                     <div className="">
-                        <div className="text-3xl p-5 w-10/12 text-gray-200">
+                        <div className="text-3xl p-4 w-10/12">
                             <img src="images/lsledger.png"/>
-                            <i>Serving good and evil since 2k24</i>
+                            <p className="mt-3"><i>Serving good and evil since 2k24</i></p>
                         </div>
                     </div>
                 </div>
