@@ -1,6 +1,5 @@
 import React from 'react';
 import FactionView from "./FactionView";
-
 function App() {
     return (
         <div className="App">
