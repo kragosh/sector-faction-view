@@ -1,6 +1,7 @@
 import FactionItem, {AdditonalFactionProps, Faction, FactionCardProps} from "./FactionItem";
 import {useEffect, useState} from "react";
 import AdditionalData from "./data";
+import {getFactionTypeName} from "./util";
 
 type FactionOverview = {
     name: string;
@@ -29,6 +30,7 @@ async function getFactionInformation() {
                 text: number.description,
                 available: number.available,
                 image: faction.image,
+                type: faction.category,
                 additional: AdditionalData.find((row) => row.number === number.number) || getEmptyAdditionalData()
             });
         });
@@ -36,7 +38,7 @@ async function getFactionInformation() {
 
     let factionOverviewDict: IFactionOverviewDictionary = {alle: {name: "Alle", count: 0, online: 0}};
     factionCards.map((faction: FactionCardProps) => {
-        const type = faction.additional.type;
+        const type = getFactionTypeName(faction.type);
         if (factionOverviewDict[type] === undefined) {
             factionOverviewDict[type] = {
                 name: type,
@@ -99,7 +101,7 @@ function FactionView(): JSX.Element {
         <>
             <div className="flex justify-center">
                 <div className="w-9/12">
-                    <div className="grid grid-cols-6 opacity-80">
+                    <div className="grid grid-cols-8 opacity-80">
                         {overview.map((faction) => {
                             let color: string = "text-gray-700";
                             if (faction.online > 0) {
@@ -119,7 +121,7 @@ function FactionView(): JSX.Element {
             </div>
 
             <div className="cards">
-                {data.filter(card => filter === "Alle" || card.additional.type === filter).filter(faction => faction.available).map((faction) => {
+                {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => faction.available).map((faction) => {
                     return (<FactionItem
                         key={faction.number}
                         name={faction.name}
@@ -128,9 +130,10 @@ function FactionView(): JSX.Element {
                         available={faction.available}
                         image={faction.image}
                         additional={faction.additional}
+                        type={faction.type}
                     />)
                 })}
-                {data.filter(card => filter === "Alle" || card.additional.type === filter).filter(faction => !faction.available).map((faction) => {
+                {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => !faction.available).map((faction) => {
                     return (
                         <FactionItem
                             key={faction.number}
@@ -140,6 +143,7 @@ function FactionView(): JSX.Element {
                             available={faction.available}
                             image={faction.image}
                             additional={faction.additional}
+                            type={faction.type}
                         />)
                 })}
             </div>
