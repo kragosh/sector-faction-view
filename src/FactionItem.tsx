@@ -68,8 +68,8 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                             </div>
                             <div className="w-2/12 text-right">
                                 {(faction.available)
-                                    ? <p className="text-green-500">Verfügbar</p>
-                                    : <p className="text-red-500">Nicht verfügbar</p>
+                                    ? <p className="text-green-500">verfügbar</p>
+                                    : <p className="text-red-500">unbesetzt</p>
                                 }
                             </div>
                         </div>
