@@ -61,7 +61,7 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
                         </div>
                         <div className="flex flex-row">
                             <div className="w-2/12">
-                                <i className="text-gray-700">{getFactionTypeName(faction.type)}</i>
+                                <i className="text-yellow-500">{getFactionTypeName(faction.type)}</i>
                             </div>
                             <div className="w-8/12">
                                 <p className="text-gray-600 text-center"></p>
