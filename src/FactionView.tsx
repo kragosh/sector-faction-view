@@ -100,7 +100,7 @@ function FactionView(): JSX.Element {
     return (
         <>
             <div className="flex justify-center">
-                <div className="w-9/12">
+                <div className="w-full">
                     <div className="grid grid-cols-8 opacity-80">
                         {overview.map((faction) => {
                             let color: string = "text-gray-700";
@@ -120,7 +120,7 @@ function FactionView(): JSX.Element {
                 </div>
             </div>
 
-            <div className="cards">
+            <div className="cards grid grid-cols-2">
                 {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => faction.available).map((faction) => {
                     return (<FactionItem
                         key={faction.number}
