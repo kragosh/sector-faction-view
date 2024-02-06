@@ -122,7 +122,7 @@ function FactionView(): JSX.Element {
             </div>
 
             <div className="cards grid grid-cols-2">
-                {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => faction.available).map((faction) => {
+                {data.filter(card => filter === "Alle" || card.abt === filter).filter(faction => faction.available).map((faction) => {
                     return (<FactionItem
                         key={faction.number}
                         name={faction.name}
@@ -135,7 +135,7 @@ function FactionView(): JSX.Element {
                         abt={faction.abt}
                     />)
                 })}
-                {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => !faction.available).map((faction) => {
+                {data.filter(card => filter === "Alle" || card.abt === filter).filter(faction => !faction.available).map((faction) => {
                     return (
                         <FactionItem
                             key={faction.number}
