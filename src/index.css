@@ -17,7 +17,7 @@ h1 {
 }
 
 .element {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent), linear-gradient(to right, #0A3D62, #2A5298),linear-gradient(to bottom, #FEB779 0%, #FC94C5 25%, #D07FC2 50%, #862E85 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent), linear-gradient(to top, #0A3D6210 0%, #0A3D6210 20%, #2A5298a0 100%), linear-gradient(to right, #FEB779 0%, #FC94C5 25%, #D07FC2 50%, #862E85 100%);
 }
 
 .cards {

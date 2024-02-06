@@ -112,7 +112,7 @@ function FactionView(): JSX.Element {
                             return (
 
                                 <div onClick={(e) => applyFilter(e, faction.name)} key={faction.name}
-                                     className={"rounded-lg backdrop-blur bg-opacity-30 drop-shadow-lg text-center m-3 p-2 " + (filter === faction.name ? "bg-neutral-200" : "bg-neutral-900")}>
+                                     className={"rounded-lg bg-opacity-30 drop-shadow-lg text-center m-3 p-2 " + (filter === faction.name ? "bg-neutral-200" : "bg-neutral-900")}>
                                     <p className={color}>{faction.name}<br/>{faction.online}/{faction.count}</p>
                                 </div>
                             )
