@@ -31,6 +31,7 @@ async function getFactionInformation() {
                 available: number.available,
                 image: faction.image,
                 type: faction.category,
+                abt: faction.abt,
                 additional: AdditionalData.find((row) => row.number === number.number) || getEmptyAdditionalData()
             });
         });
@@ -38,7 +39,7 @@ async function getFactionInformation() {
 
     let factionOverviewDict: IFactionOverviewDictionary = {alle: {name: "Alle", count: 0, online: 0}};
     factionCards.map((faction: FactionCardProps) => {
-        const type = getFactionTypeName(faction.type);
+        const type = faction.abt
         if (factionOverviewDict[type] === undefined) {
             factionOverviewDict[type] = {
                 name: type,
@@ -131,6 +132,7 @@ function FactionView(): JSX.Element {
                         image={faction.image}
                         additional={faction.additional}
                         type={faction.type}
+                        abt={faction.abt}
                     />)
                 })}
                 {data.filter(card => filter === "Alle" || getFactionTypeName(card.type) === filter).filter(faction => !faction.available).map((faction) => {
@@ -144,6 +146,7 @@ function FactionView(): JSX.Element {
                             image={faction.image}
                             additional={faction.additional}
                             type={faction.type}
+                            abt={faction.abt}
                         />)
                 })}
             </div>

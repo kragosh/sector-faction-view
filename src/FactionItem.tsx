@@ -6,6 +6,7 @@ export type Faction = {
     numbers: FactionNumbers[];
     anyavailable: boolean;
     category: number;
+    abt: string;
     image: string;
 }
 
@@ -25,6 +26,7 @@ export type FactionCardProps = {
     available: boolean;
     image: string;
     type: number;
+    abt: string;
     additional: AdditonalFactionProps;
 
 }
