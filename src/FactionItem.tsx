@@ -1,4 +1,3 @@
-import data from "./data";
 import {getFactionTypeName} from "./util";
 
 export type Faction = {
@@ -85,20 +84,3 @@ function FactionItem(faction: FactionCardProps): JSX.Element {
 }
 
 export default FactionItem;
-
-/**
- * <div class="flex items-center bg-white shadow-lg rounded-lg overflow-hidden p-4">
- * <!-- Logo Bereich -->
- * <div class="w-1/4">
- * <img src="pfad/zum/firmenlogo.png" alt="Firmenlogo" class="w-full h-auto">
- *</div>
- *
- * <!-- Text Bereich -->
- * <div class="w-3/4 pl-4">
- * <p class="font-bold text-lg">Firmenname</p>
- * <p class="text-gray-600">Leitstellentelefonnummer: 0123-456789</p>
- * <p class="text-gray-600">Hier steht ein Freitext.</p>
- * <p class="text-green-500">Verfügbarkeit: Verfügbar</p> <!-- Grüner Text für Verfügbarkeit -->
- * </div>
- * </div>
- */

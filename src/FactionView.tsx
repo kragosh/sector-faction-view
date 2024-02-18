@@ -1,7 +1,6 @@
 import FactionItem, {AdditonalFactionProps, Faction, FactionCardProps} from "./FactionItem";
 import {useEffect, useState} from "react";
 import AdditionalData from "./data";
-import {getFactionTypeName} from "./util";
 
 type FactionOverview = {
     name: string;
@@ -21,8 +20,8 @@ async function getFactionInformation() {
 
     let factionCards: FactionCardProps[] = []
 
-    data.map((faction: Faction) => {
-        faction.numbers.map((number) => {
+    data.forEach((faction: Faction) => {
+        faction.numbers.forEach((number) => {
             factionCards.push({
                 key: number.number,
                 name: number.name,
@@ -38,7 +37,7 @@ async function getFactionInformation() {
     });
 
     let factionOverviewDict: IFactionOverviewDictionary = {alle: {name: "Alle", count: 0, online: 0}};
-    factionCards.map((faction: FactionCardProps) => {
+    factionCards.forEach((faction: FactionCardProps) => {
         const type = faction.abt
         if (factionOverviewDict[type] === undefined) {
             factionOverviewDict[type] = {
