@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sector-faction-view/static/css/main.0c7b549c.css",
+    "main.js": "/sector-faction-view/static/js/main.57957141.js",
+    "index.html": "/sector-faction-view/index.html",
+    "main.0c7b549c.css.map": "/sector-faction-view/static/css/main.0c7b549c.css.map",
+    "main.57957141.js.map": "/sector-faction-view/static/js/main.57957141.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c7b549c.css",
+    "static/js/main.57957141.js"
+  ]
+}
