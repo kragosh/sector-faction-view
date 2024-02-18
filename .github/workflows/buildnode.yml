@@ -1,5 +1,8 @@
 name: Build React App
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   build_react:
     runs-on: ubuntu-latest
